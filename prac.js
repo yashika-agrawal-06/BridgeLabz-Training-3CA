@@ -1,1 +1,0 @@
-console.log("My name is Yashika Agrawal; I am a student of BridgeLabz. I like to explore new things. My cpi is 8.68. I am learning git & GitHub");
