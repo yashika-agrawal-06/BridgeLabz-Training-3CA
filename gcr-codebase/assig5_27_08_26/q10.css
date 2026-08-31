@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f0e8;
+    color: #202b2a;
+    font-family: Arial, sans-serif;
+}
+
+.site-header {
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    padding: 1.2rem 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(245, 240, 232, 0.94);
+    border-bottom: 1px solid #c9bda9;
+}
+
+.logo {
+    color: #202b2a;
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a {
+    margin-left: 1.5rem;
+    color: #202b2a;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    min-height: 85vh;
+    padding: 15vh 8%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(32, 43, 42, 0.9), rgba(32, 43, 42, 0.25)), url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=80") center / cover;
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 45rem;
+}
+
+.hero-content p,
+.eyebrow {
+    color: #e6a45d;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin: 1rem 0 2rem;
+    font-family: Georgia, serif;
+    font-size: clamp(3rem, 9vw, 7rem);
+    line-height: 0.9;
+}
+
+.hero a,
+button {
+    padding: 0.9rem 1.2rem;
+    border: 2px solid #e6a45d;
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #e6a45d;
+    color: #202b2a;
+    font: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hero-note {
+    position: absolute;
+    right: 6%;
+    bottom: 2rem;
+    writing-mode: vertical-rl;
+}
+
+.about,
+.services,
+.contact {
+    padding: 10vh 8%;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8%;
+    align-items: center;
+}
+
+.about h2,
+.services h2,
+.contact h2 {
+    margin: 0.5rem 0 1.5rem;
+    font-family: Georgia, serif;
+    font-size: clamp(2.3rem, 6vw, 5rem);
+    line-height: 0.95;
+}
+
+.about p:not(.eyebrow) {
+    max-width: 30rem;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.about img {
+    width: 100%;
+    border: 10px solid #d9c9b5;
+}
+
+.services {
+    background: linear-gradient(135deg, #d9e3dc, #f5f0e8);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.service-grid article {
+    position: relative;
+    min-height: 15rem;
+    padding: 2rem;
+    border: 1px solid #aabbb1;
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+.service-grid span {
+    color: #b45c3c;
+    font-weight: bold;
+}
+
+.service-grid h3 {
+    margin-top: 3rem;
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+}
+
+.service-grid p {
+    line-height: 1.6;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8%;
+    background-color: #202b2a;
+    color: #ffffff;
+}
+
+.contact form {
+    align-self: center;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+footer {
+    padding: 2rem 8%;
+    background-color: #161e1d;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .about,
+    .contact,
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-grid article {
+        min-height: auto;
+    }
+}

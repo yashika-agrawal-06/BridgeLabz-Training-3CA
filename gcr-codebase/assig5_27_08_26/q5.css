@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #102a43;
+    color: #102a43;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 8vh 5%;
+}
+
+header {
+    margin-bottom: 3rem;
+    color: #f4f7f9;
+    text-align: center;
+}
+
+header p {
+    color: #f1c56b;
+    font-weight: bold;
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+}
+
+.plans {
+    display: flex;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.plan {
+    position: relative;
+    flex: 1;
+    min-height: 27rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #bcccdc;
+    background-color: #f4f7f9;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.plan:hover {
+    transform: scale(1.04);
+    background-color: #fff4d6;
+}
+
+.plan h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.price {
+    margin: 0 0 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.price span {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.plan ul {
+    flex: 1;
+    padding-left: 1.2rem;
+    line-height: 2;
+}
+
+.plan a {
+    padding: 0.85rem;
+    background-color: #e07845;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.popular {
+    border: 4px solid #e07845;
+}
+
+.badge {
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+    margin: 0;
+    padding: 0.4rem 0.7rem;
+    background-color: #f1c56b;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .plans {
+        flex-direction: column;
+    }
+}
