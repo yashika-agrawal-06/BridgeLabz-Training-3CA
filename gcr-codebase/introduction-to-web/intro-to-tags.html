@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- Declares that this document is written in HTML5 and tells the browser to use Standards Mode -->
+
+<html lang="en"> <!-- The root element of the HTML document. lang="en" tells browsers, search engines, and screen readers that the page is in English -->
+
+<head> <!-- Contains information ABOUT the webpage. Nothing inside <head> is displayed directly on the webpage -->
+
+    <meta charset="UTF-8">
+    <!-- Specifies that the document uses UTF-8 character encoding.
+         UTF-8 supports almost every language and special character including emojis. -->
+
+    <link rel="icon" type="image/png" href="/logo.png?v=1000">
+    <!-- Sets the favicon (the small icon shown in the browser tab).
+         rel="icon" tells the browser this file is the website icon.
+         type="image/png" tells the browser the file is a PNG image.
+         href points to the image file.
+         ?v=1000 is a version number used for cache busting.
+         If the logo changes, changing this version forces browsers to download the new image instead of using the old cached one. -->
+
+    <link rel="shortcut icon" type="image/png" href="/logo.png?v=1000">
+    <!-- Provides a shortcut icon.
+         Mainly kept for compatibility with older browsers that look for "shortcut icon". -->
+
+    <link rel="apple-touch-icon" href="/logo.png?v=1000">
+    <!-- Specifies the icon used when someone adds the website to the Home Screen on an iPhone or iPad.
+         iOS uses this image instead of the regular favicon. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the webpage responsive.
+         width=device-width means use the actual width of the user's device.
+         initial-scale=1.0 means display the page at 100% zoom initially.
+         Without this, websites often appear tiny on mobile devices. -->
+
+    <meta
+        name="description"
+        content="BridgeLabz Blueprint.AI – AI-powered Fellowship Mapping & Mandate Intelligence System">
+    <!-- Gives a short description of the webpage.
+         Search engines may display this text below the page title in search results.
+         It also helps when the page is shared on some platforms. -->
+
+    <meta
+        name="keywords"
+        content="BridgeLabz, Blueprint, Fellowship, MIS, Hiring, Mapping">
+    <!-- Lists keywords related to the webpage.
+         Modern search engines like Google mostly ignore this tag,
+         but some internal search engines and tools may still use it. -->
+
+    <title>BLuprnt.AI</title>
+    <!-- The title of the webpage.
+         Appears in:
+         • Browser tab
+         • Bookmarks
+         • Search engine results (usually)
+         • Browser history -->
+
+</head>
+
+<body>
+    <!-- Everything inside the body becomes the visible content of the webpage -->
+
+    <div id="root"></div>
+    <!-- An empty container.
+         React will find this element using its id="root"
+         and dynamically insert the entire application here.
+         Without JavaScript, this div remains empty. -->
+
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- Loads the main TypeScript React file.
+         type="module" tells the browser this JavaScript uses ES Modules,
+         allowing import and export statements.
+         src="/src/main.tsx" is the entry point of the React application.
+         React starts running from this file and renders everything inside the root div. -->
+
+</body>
+
+</html>
+<!-- Marks the end of the HTML document -->
