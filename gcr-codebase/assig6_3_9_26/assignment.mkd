@@ -1,0 +1,103 @@
+ASSIGNMENT 6
+
+Instructions for Students
+● Create a separate HTML and CSS file for each question.
+● Do not use JavaScript or any external CSS frameworks.
+● You may use semantic HTML5 tags (header, main, section, footer, etc.).
+● All designs should be responsive and use only Flexbox or Grid for layout.
+
+1. Create a personal portfolio webpage layout using Flexbox.
+Requirements:
+● Header: includes your name (left) and navigation links (right).
+● Main area: two sections — an “About Me” section (text) and an image section.
+● Footer: simple copyright text centered.
+● Use display: flex; to align header items horizontally and main content side-by-side.
+● Ensure that when the screen width is below 700px, all sections stack vertically.
+● Center items both vertically and horizontally using align-items and
+justify-content.
+
+2. Design a 4-column product gallery using CSS Grid.
+Requirements:
+● Create a grid of 8 product cards.
+● Each card should contain a product name and price.
+● Use grid-template-columns: repeat(4, 1fr); for desktop.
+● Adjust to 2 columns on tablets and 1 column on mobile using media queries.
+● Add hover effects on each card: use transform: scale(1.05) and transition:
+0.3s.
+
+● Cards should have equal height regardless of content length.
+
+3. Create a 3-section homepage using Flexbox: Header, Main, and Footer.
+Requirements:
+● Header: navigation links spaced evenly using justify-content: space-around;.
+● Main: three boxes (Services, Projects, Contact) horizontally aligned.
+● On hover, each box should slightly rotate (transform: rotate(2deg);).
+● Footer: stays at the bottom and spans full width.
+● The layout must remain balanced at all screen sizes.
+
+4. Build a dashboard layout using CSS Grid.
+Requirements:
+● Header spans the top across all columns.
+● Sidebar on the left with vertical navigation.
+● Main content with 4 boxes arranged in 2 rows and 2 columns.
+● One box should span two columns (grid-column: span 2;).
+● Use grid-gap for spacing and fractional units (fr) for widths.
+● Add hover effects that scale up the box and cast a shadow.
+
+5. Design a pricing section using Flexbox.
+Requirements:
+● Create three pricing cards aligned horizontally.
+● The middle card should be slightly larger and highlighted with a different background
+color.
+● On hover, cards should rise up slightly (transform: translateY(-10px)), with a
+smooth transition.
+
+● Add a simple fade-in animation for all three cards when the page loads using
+@keyframes.
+● Make the layout stack vertically below 750px.
+
+6. Create a responsive blog layout using CSS Grid.
+Requirements:
+● Header with title and nav links.
+● Sidebar on the left containing categories.
+● Main content area displaying two blog posts side-by-side.
+● Footer with contact info.
+● Use grid-template-areas to structure the layout.
+● Below 800px, sidebar should move below the main content.
+● Add padding, margins, and equal spacing using gap.
+
+7. Design a CSS loading animation using only div elements.
+Requirements:
+● Create three small circles that move up and down repeatedly.
+● Use @keyframes to control the motion and timing.
+● Each circle should start its animation with a slight delay.
+● Center the animation on the page using Flexbox alignment.
+● Use transform: translateY() and animation-iteration-count:
+infinite;.
+
+8. Build a photo gallery using Grid with hover transformations.
+Requirements:
+● Use grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));.
+
+● Each image should fill its grid cell completely and scale up slightly on hover.
+● Add transition: transform 0.5s ease; for smooth zoom effect.
+● Include image captions below each image using <figcaption>.
+● Layout should automatically adjust to screen size.
+
+9. Create a card flip animation using CSS Transformations and Transitions.
+Requirements:
+● Build one card that flips 180 degrees on hover.
+● Front side: shows title and image.
+● Back side: shows text description.
+● Use transform-style: preserve-3d; and perspective: 1000px;.
+● Implement the flip using transform: rotateY(180deg); and smooth transitions.
+● Card must remain centered on screen using Flexbox.
+
+10. Design a responsive webpage layout combining Flexbox and Grid.
+Requirements:
+● Header with logo and nav links using Flexbox.
+● Main area divided into a 2-column Grid (Article + Sidebar).
+● Footer spans the full width with centered text.
+● Inside the main article, include three boxes aligned using Flexbox.
+● Use @keyframes to animate one element (e.g., a title fades in or moves up).
+● Ensure the layout collapses into a single column on mobile screens.
