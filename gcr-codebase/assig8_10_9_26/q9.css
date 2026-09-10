@@ -1,0 +1,245 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Main Content */
+main {
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Effects Container */
+.effects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Effect Demo Box */
+.effect-demo {
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+}
+
+.effect-demo h3 {
+    color: #667eea;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.effect-demo p {
+    color: #666;
+    font-size: 0.85em;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Effect 1: Growing Button */
+.effect-btn {
+    padding: 12px 24px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.effect-grow:hover {
+    background: #764ba2;
+    transform: scale(1.15);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.5);
+}
+
+.effect-grow:active {
+    transform: scale(1.08);
+}
+
+/* Effect 2: Rotating Text */
+@keyframes rotateEffect {
+    0% {
+        transform: rotate(0deg) scale(1);
+        color: #667eea;
+    }
+    50% {
+        color: #764ba2;
+    }
+    100% {
+        transform: rotate(360deg) scale(1.1);
+        color: #667eea;
+    }
+}
+
+.effect-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 15px 25px;
+    background: #e8eaf6;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.effect-text:hover {
+    animation: rotateEffect 0.8s ease-in-out;
+}
+
+/* Effect 3: Sliding Link */
+.effect-link {
+    position: relative;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.effect-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #764ba2;
+    transition: width 0.3s ease-in-out;
+}
+
+.effect-link:hover {
+    color: #764ba2;
+    transform: translateX(5px);
+}
+
+.effect-link:hover::after {
+    width: 100%;
+}
+
+/* Effect 4: Glowing Box */
+.effect-box {
+    width: 100px;
+    height: 100px;
+    margin: 15px auto;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 rgba(102, 126, 234, 0.5);
+}
+
+.effect-glow:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.8), 
+                0 0 40px rgba(118, 75, 162, 0.6);
+}
+
+/* Effect 5: Bouncing Icon */
+@keyframes bounceEffect {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+        color: #667eea;
+    }
+    50% {
+        transform: translateY(-20px) scale(1.2);
+        color: #e91e63;
+    }
+}
+
+.effect-icon {
+    font-size: 3em;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.effect-icon:hover {
+    animation: bounceEffect 0.6s ease-in-out infinite;
+}
+
+/* Effect 6: Card Lift */
+.effect-card {
+    background: white;
+    border: 2px solid #667eea;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px auto;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.effect-card p {
+    color: #667eea;
+    font-weight: bold;
+    text-align: center;
+}
+
+.effect-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.4);
+    border-color: #764ba2;
+}
+
+.effect-card:hover p {
+    color: #764ba2;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    font-size: 0.9em;
+}

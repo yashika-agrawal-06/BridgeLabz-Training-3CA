@@ -1,0 +1,163 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Main Content */
+main {
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Examples Container - Flexbox */
+.examples-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.example {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    text-align: center;
+}
+
+.example h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.example p {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* :hover - Link Styling */
+.hover-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.hover-link:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+    transform: translateY(-2px);
+}
+
+/* :focus - Button Styling */
+.focus-button {
+    padding: 12px 24px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px 0;
+}
+
+.focus-button:focus {
+    outline: 3px solid #764ba2;
+    outline-offset: 2px;
+    transform: scale(1.05);
+}
+
+/* :active - Button Styling */
+.active-button {
+    padding: 12px 24px;
+    background: #764ba2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 10px 0;
+}
+
+.active-button:active {
+    background: #5a3a7f;
+    transform: scale(0.95);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* :nth-child() - List Styling */
+.list-demo {
+    list-style: none;
+    margin: 10px 0;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.list-demo li {
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.list-demo li:nth-child(odd) {
+    background: #e8eaf6;
+    color: #667eea;
+}
+
+.list-demo li:nth-child(even) {
+    background: #f3e5f5;
+    color: #764ba2;
+}
+
+.list-demo li:hover {
+    background: #667eea;
+    color: white;
+    transform: translateX(5px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
