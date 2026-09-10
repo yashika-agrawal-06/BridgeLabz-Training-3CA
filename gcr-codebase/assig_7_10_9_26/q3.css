@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+/* Fixed Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+/* Fixed Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+main {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+/* General Section Setup */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Linear Gradient Section with Parallax-like Effect */
+.section-linear {
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  background-attachment: fixed; /* Creates parallax effect */
+  background-size: cover;
+}
+
+/* Radial Gradient Section */
+.section-radial {
+  background: radial-gradient(circle, #ff7675, #d63031);
+}

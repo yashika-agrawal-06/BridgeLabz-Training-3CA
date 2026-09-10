@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 40px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Horizontal alignment using Flexbox */
+.transform-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card-wrapper {
+  text-align: center;
+}
+
+/* Base Box Styling */
+.box {
+  width: 120px;
+  height: 120px;
+  background-color: #0984e3;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 8px;
+  /* Smooth transition property */
+  transition: all 0.4s ease;
+}
+
+.label {
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #636e72;
+}
+
+/* Hover Transformations */
+.rotate-box:hover {
+  transform: rotate(45deg);
+  background-color: #6c5ce7;
+}
+
+.scale-box:hover {
+  transform: scale(1.2);
+  background-color: #00b894;
+}
+
+.translate-box:hover {
+  transform: translateY(-15px);
+  background-color: #e17055;
+}
+
+.skew-box:hover {
+  transform: skew(15deg, 10deg);
+  background-color: #d63031;
+}

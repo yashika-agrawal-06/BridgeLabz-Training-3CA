@@ -1,0 +1,56 @@
+body {
+  background-color: #fdfdfd;
+  color: #2d3436;
+  font-family: 'Georgia', serif;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.article-container {
+  max-width: 650px;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+h1 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+/* Styled inline tags with custom colors */
+mark {
+  background-color: #ffeaa7;
+  color: #d35400;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+strong {
+  color: #00b894;
+}
+
+em {
+  color: #6c5ce7;
+}
+
+/* ::first-letter Pseudo-element */
+.lead-paragraph::first-letter {
+  font-size: 3.2em;
+  float: left;
+  line-height: 0.8;
+  padding-right: 8px;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* ::first-line Pseudo-element */
+.lead-paragraph::first-line {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
