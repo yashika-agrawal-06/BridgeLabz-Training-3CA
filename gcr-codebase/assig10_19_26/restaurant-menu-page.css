@@ -1,0 +1,10 @@
+/* Table layout tweaks and fonts */
+.table th {
+  font-weight: 600;
+}
+
+.figure-img {
+  max-height: 280px;
+  width: 100%;
+  object-fit: cover;
+}

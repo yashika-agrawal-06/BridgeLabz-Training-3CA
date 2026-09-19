@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="notifications-dashboard.css">
+</head>
+<body class="bg-light py-5">
+
+  <main class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow-sm border-0 mb-4">
+          <div class="card-header bg-dark text-white"><h1 class="h4 mb-0">System Notifications Dashboard</h1></div>
+          <div class="card-body">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <strong>Attention!</strong> Your subscription plan expires in 3 days. Please renew soon.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-success" role="alert"><strong>Success:</strong> Profile information has been updated successfully.</div>
+            <div class="alert alert-info" role="alert"><strong>New Message:</strong> You have received 4 new support responses.</div>
+            <div class="alert alert-danger" role="alert"><strong>Critical Alert:</strong> Backup task failed at 02:00 AM. Check system log details.</div>
+            <div class="summary-well mt-4 p-3 bg-light border rounded">
+              <h2 class="h6 fw-bold mb-2">Notification Summary</h2>
+              <p class="mb-0 text-muted small">You have 4 total system alerts: 1 warning, 1 success notice, 1 info message, and 1 system error requiring attention.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* Custom background overrides and tweaks */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+section {
+  width: 100%;
+}

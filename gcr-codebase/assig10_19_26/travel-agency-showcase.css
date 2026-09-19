@@ -1,0 +1,11 @@
+/* Fixed height and object scaling for uniform carousel slides */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .carousel-item img {
+    height: 250px;
+  }
+}
