@@ -1,0 +1,6 @@
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; display: flex; align-items: center; justify-content: center; background: #273c43; }
+main { display: flex; align-items: center; justify-content: center; gap: 0.7rem; }
+.circle { width: 18px; height: 18px; border-radius: 50%; background: #e6a35e; animation: bounce 0.9s ease-in-out; animation-iteration-count: infinite; }
+.circle:nth-child(2) { animation-delay: 0.15s; background: #e9d08c; } .circle:nth-child(3) { animation-delay: 0.3s; background: #d97b58; }
+@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-25px); } }

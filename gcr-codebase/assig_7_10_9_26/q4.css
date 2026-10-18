@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f3f6;
+  font-family: sans-serif;
+}
+
+/* Single Row Layout using Flexbox */
+.card-grid {
+  display: flex;
+  gap: 30px;
+}
+
+/* Heading Text Shadow */
+.shadow-heading {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #2c3e50;
+}
+
+/* Base Card Styling */
+.card {
+  width: 250px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* Transition for lift animation */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Different Initial Box Shadows */
+.card-1 {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-2 {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-3 {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Lift Effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+}

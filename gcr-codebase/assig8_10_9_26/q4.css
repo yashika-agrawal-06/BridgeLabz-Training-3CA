@@ -1,0 +1,193 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fafafa;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Section Styling */
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #667eea;
+}
+
+section:nth-child(even) {
+    border-left-color: #764ba2;
+}
+
+/* Element Selector - h2 */
+h2 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+/* Element Selector - p */
+p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Element Selector - a */
+a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* Class Selector */
+.highlight {
+    background: #fff3cd;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border-left: 3px solid #ffc107;
+}
+
+/* Multiple Classes */
+.highlight.important {
+    background: #f8d7da;
+    border-left-color: #dc3545;
+    color: #721c24;
+}
+
+/* Button Class Selector */
+.btn {
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* ID Selector */
+#unique-content {
+    background: #e7f3ff;
+    border: 2px solid #667eea;
+    padding: 15px;
+    border-radius: 5px;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+/* Attribute Selectors */
+input[type="text"],
+input[type="password"] {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 5px;
+    font-size: 0.95em;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Descendant Combinator (space) */
+.box p {
+    background: #e8eaf6;
+    padding: 10px;
+    border-radius: 4px;
+    color: #667eea;
+}
+
+/* Child Combinator (>) */
+#combinators > h2 {
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+}
+
+/* List Styling */
+.list {
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+.list li {
+    color: #333;
+    margin-bottom: 8px;
+    padding: 8px 0;
+}
+
+.list li:nth-child(odd) {
+    background: #f9f9f9;
+    padding-left: 10px;
+}
+
+/* Adjacent Sibling Combinator (+) */
+span {
+    display: inline-block;
+    background: #e8f5e9;
+    padding: 8px 12px;
+    margin: 5px 2px;
+    border-radius: 4px;
+    color: #2e7d32;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #666;
+    padding: 20px;
+    font-size: 0.9em;
+    border-top: 1px solid #ddd;
+}

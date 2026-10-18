@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background-color: #f7f9fa;
+}
+
+/* 1. Attribute Selectors */
+/* Target input elements with type="text" */
+input[type="text"] {
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Target links starting with "https" */
+a[href^="https"] {
+  color: green;
+  font-weight: bold;
+}
+
+/* 2. Pseudo-Classes */
+/* :hover and :focus pseudo-classes */
+input[type="text"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* :nth-child() pseudo-class */
+.link-list li:nth-child(odd) {
+  background-color: #e0e0e0;
+  padding: 5px;
+}
+
+/* 3. Pseudo-Elements */
+/* ::before and ::after pseudo-elements */
+.link-list li::before {
+  content: "→ ";
+  color: #888;
+}
+
+.form-group::after {
+  content: " (Required Field)";
+  font-size: 0.8em;
+  color: #e74c3c;
+}
+
+/* 4. Combinators */
+/* Child Combinator (>) */
+.parent > .child {
+  color: #2980b9;
+  font-weight: bold;
+}
+
+/* Descendant Combinator (space) */
+.parent p {
+  line-height: 1.5;
+}
+
+/* Adjacent Sibling Combinator (+) */
+.sibling-head + p {
+  background-color: #ffeaa7;
+}
+
+/* General Sibling Combinator (~) */
+.sibling-head ~ p {
+  border-left: 3px solid #fdcb6e;
+  padding-left: 5px;
+}

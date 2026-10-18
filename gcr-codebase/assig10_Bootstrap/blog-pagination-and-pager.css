@@ -1,0 +1,4 @@
+/* Center alignment and subtle tweaks for post cards */
+article.card {
+  border-radius: 6px;
+}

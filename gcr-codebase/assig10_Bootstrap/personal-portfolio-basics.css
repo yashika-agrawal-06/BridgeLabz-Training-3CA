@@ -1,0 +1,10 @@
+/* Styling for profile avatar border and card shadow refinement */
+img.rounded-circle {
+  object-fit: cover;
+  width: 180px;
+  height: 180px;
+}
+
+.card {
+  border-radius: 8px;
+}

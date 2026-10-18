@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="q8.css">
+</head>
+<body>
+    <header>
+        <h1>Box-Sizing Comparison Page</h1>
+        <p>Default box-sizing vs border-box</p>
+    </header>
+
+    <main>
+        <section class="comparison-container">
+            <!-- Default Box-Sizing -->
+            <div class="box-wrapper">
+                <h2>Default: content-box</h2>
+                <div class="box default-box">
+                    <p>Content-Box</p>
+                </div>
+                <div class="explanation">
+                    <p><strong>Width:</strong> 300px</p>
+                    <p><strong>Padding:</strong> 20px</p>
+                    <p><strong>Total Width:</strong> 340px</p>
+                    <p><em>Padding is added to width</em></p>
+                </div>
+            </div>
+
+            <!-- Border-Box -->
+            <div class="box-wrapper">
+                <h2>border-box</h2>
+                <div class="box border-box">
+                    <p>Border-Box</p>
+                </div>
+                <div class="explanation">
+                    <p><strong>Width:</strong> 300px</p>
+                    <p><strong>Padding:</strong> 20px</p>
+                    <p><strong>Total Width:</strong> 300px</p>
+                    <p><em>Padding is included in width</em></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="details">
+            <h3>How Box-Sizing Affects Total Size:</h3>
+            <ul>
+                <li><strong>content-box (default):</strong> The width property applies only to the content. Padding, borders, and margins are added on top of this width.</li>
+                <li><strong>border-box:</strong> The width property includes padding and borders but not margins. This makes sizing more predictable and easier to work with.</li>
+                <li>Using <code>border-box</code> is generally recommended for modern web development as it simplifies layout calculations.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Assignment 8 - Question 8</p>
+    </footer>
+</body>
+</html>

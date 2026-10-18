@@ -1,0 +1,4 @@
+/* Minimal styling additions for list group borders */
+.list-group-item {
+  border-color: #f0f0f0;
+}

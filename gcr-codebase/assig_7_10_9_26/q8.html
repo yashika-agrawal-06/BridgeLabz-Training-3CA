@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model Exploration Page</title>
+  <link rel="stylesheet" href="q8.css">
+</head>
+<body>
+  <main class="box-model-wrapper">
+    <h2>Box Model Layer Representation</h2>
+
+    <div class="margin-layer">
+      <span class="layer-label">Margin Area</span>
+
+      <div class="border-layer">
+        <span class="layer-label">Border Area</span>
+
+        <div class="padding-layer">
+          <span class="layer-label">Padding Area</span>
+
+          <div class="content-layer">
+            <strong>Content Layer</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="sizing-comparison">
+      <div class="box content-box">
+        <h4>content-box</h4>
+        <p>Width: 200px + Padding + Border = Total size expands beyond 200px.</p>
+      </div>
+
+      <div class="box border-box">
+        <h4>border-box</h4>
+        <p>Width: 200px includes Padding and Border within total width.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

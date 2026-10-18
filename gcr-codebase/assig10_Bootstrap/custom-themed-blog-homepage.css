@@ -1,0 +1,32 @@
+/* Override Bootstrap CSS Variables globally */
+:root {
+  --bs-primary: #008080; /* Teal theme color override */
+  --bs-font-sans-serif: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+}
+
+.custom-header {
+  background-color: #f0f7f7;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-outline-primary {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.badge.bg-primary {
+  background-color: var(--bs-primary) !important;
+}

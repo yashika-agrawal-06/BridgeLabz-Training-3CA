@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="product-catalog.css">
+</head>
+<body class="bg-light">
+
+  <header class="bg-white py-4 mb-4 border-bottom">
+    <div class="container text-center">
+      <h1 class="h2 fw-bold mb-0">Electronics Store Catalog</h1>
+    </div>
+  </header>
+
+  <main class="container mb-5">
+    <!-- Responsive Product Grid: 4 cols on desktop, 2 cols on tablet, 1 col on mobile -->
+    <div class="row g-4">
+      <!-- Product Card 1 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm product-card">
+          <img src="https://picsum.photos/id/1/300/200" class="card-img-top" alt="Laptop">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Pro Laptop 15&quot;</h5>
+            <p class="card-text text-muted flex-grow-1">High-performance laptop suitable for work and dynamic graphics tasks.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="h5 mb-0">$999.99</span>
+              <button class="btn btn-primary btn-sm">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm product-card">
+          <img src="https://picsum.photos/id/160/300/200" class="card-img-top" alt="Phone">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Smartphone X</h5>
+            <p class="card-text text-muted flex-grow-1">Sleek smartphone featuring dual camera and vibrant display screen.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="h5 mb-0">$699.99</span>
+              <button class="btn btn-primary btn-sm">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm product-card">
+          <img src="https://picsum.photos/id/367/300/200" class="card-img-top" alt="Headphones">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Wireless Headphones</h5>
+            <p class="card-text text-muted flex-grow-1">Noise-canceling audio headphones with clear acoustics.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="h5 mb-0">$199.99</span>
+              <button class="btn btn-primary btn-sm">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm product-card">
+          <img src="https://picsum.photos/id/201/300/200" class="card-img-top" alt="Smart Watch">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Fitness Smartwatch</h5>
+            <p class="card-text text-muted flex-grow-1">Track daily activity, heart rate monitor, and built-in GPS function.</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="h5 mb-0">$149.99</span>
+              <button class="btn btn-primary btn-sm">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

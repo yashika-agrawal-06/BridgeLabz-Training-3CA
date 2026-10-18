@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 30px;
+}
+
+/* Centered layout using Flexbox */
+.box-model-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Nested Layer Demonstration */
+.margin-layer {
+  background-color: #fbe9e7;
+  border: 2px dashed #ff7043;
+  padding: 20px;
+  position: relative;
+}
+
+.border-layer {
+  background-color: #fff8e1;
+  border: 5px solid #ffa000;
+  padding: 20px;
+}
+
+.padding-layer {
+  background-color: #e8f5e9;
+  outline: 2px dashed #66bb6a;
+  padding: 20px;
+}
+
+.content-layer {
+  background-color: #e1f5fe;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #29b6f6;
+}
+
+.layer-label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Box-Sizing Comparison Section */
+.sizing-comparison {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 8px solid #34495e;
+  background-color: #ecf0f1;
+}
+
+.content-box {
+  box-sizing: content-box; /* Width excludes padding and border */
+}
+
+.border-box {
+  box-sizing: border-box; /* Width includes padding and border */
+}
