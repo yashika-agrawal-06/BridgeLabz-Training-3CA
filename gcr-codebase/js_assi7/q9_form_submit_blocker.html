@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question 9</title>
+  <style>
+    .error-msg { color: red; font-size: 0.85em; display: none; }
+    .error-msg.visible { display: block; }
+    .input-error { border: 2px solid red; }
+  </style>
+</head>
+<body>
+  <form id="registrationForm">
+    <div>
+      <label>Name:</label>
+      <input type="text" id="regName" />
+      <span class="error-msg" id="errName">Name is required.</span>
+    </div>
+    <div>
+      <label>Email:</label>
+      <input type="text" id="regEmail" />
+      <span class="error-msg" id="errEmail">Valid email containing '@' is required.</span>
+    </div>
+    <div>
+      <label>Password:</label>
+      <input type="password" id="regPassword" />
+      <span class="error-msg" id="errPassword">Password must be at least 6 characters.</span>
+    </div>
+    <button type="submit">Submit</button>
+    <p id="successMsg" style="display: none; color: green;">Form Submitted Successfully!</p>
+  </form>
+
+  <script src="q9_form_submit_blocker.js" defer></script>
+</body>
+</html>

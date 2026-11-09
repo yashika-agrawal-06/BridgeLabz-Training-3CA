@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question 3</title>
+  <style>
+    .step { display: none; }
+    .step.active { display: block; }
+    .error { color: red; font-size: 0.8em; }
+  </style>
+</head>
+<body>
+  <div id="formContainer">
+    <div class="step active" id="step1">
+      <h3>Step 1: Name</h3>
+      <input type="text" id="nameInput" placeholder="Enter name">
+      <p class="error" id="nameError"></p>
+      <button class="next-btn">Next</button>
+    </div>
+
+    <div class="step" id="step2">
+      <h3>Step 2: Email</h3>
+      <input type="email" id="emailInput" placeholder="Enter email">
+      <p class="error" id="emailError"></p>
+      <button class="back-btn">Back</button>
+      <button class="next-btn">Next</button>
+    </div>
+
+    <div class="step" id="step3">
+      <h3>Step 3: Password</h3>
+      <input type="password" id="passwordInput" placeholder="Enter password">
+      <p class="error" id="passwordError"></p>
+      <button class="back-btn">Back</button>
+      <button id="submitBtn">Submit</button>
+    </div>
+
+    <div class="step" id="summaryStep">
+      <h3>Summary</h3>
+      <p id="summaryText"></p>
+    </div>
+  </div>
+
+  <script src="q3_multi_step_form.js" defer></script>
+</body>
+</html>

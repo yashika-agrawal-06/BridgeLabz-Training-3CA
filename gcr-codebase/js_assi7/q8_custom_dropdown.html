@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question 8</title>
+  <style>
+    .dropdown { position: relative; display: inline-block; }
+    .options { display: none; position: absolute; background: white; border: 1px solid #ccc; list-style: none; padding: 0; margin: 0; width: 100%; }
+    .options.show { display: block; }
+    .options li { padding: 8px; cursor: pointer; }
+    .options li:hover { background: #eee; }
+  </style>
+</head>
+<body>
+  <div class="dropdown" id="customDropdown">
+    <button id="dropdownBtn">Select an option</button>
+    <ul class="options" id="dropdownOptions">
+      <li>Option 1</li>
+      <li>Option 2</li>
+      <li>Option 3</li>
+    </ul>
+  </div>
+
+  <script src="q8_custom_dropdown.js" defer></script>
+</body>
+</html>

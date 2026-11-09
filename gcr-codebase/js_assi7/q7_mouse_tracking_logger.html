@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question 7</title>
+  <style>
+    #trackingBox {
+      width: 400px; height: 400px; background: #f0f0f0;
+      border: 2px solid #ccc; position: relative; overflow: hidden;
+    }
+    .dot {
+      width: 10px; height: 10px; background: red;
+      border-radius: 50%; position: absolute; transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <p>Coordinates: <span id="coords">X: 0, Y: 0</span></p>
+  <div id="trackingBox"></div>
+
+  <script src="q7_mouse_tracking_logger.js" defer></script>
+</body>
+</html>
