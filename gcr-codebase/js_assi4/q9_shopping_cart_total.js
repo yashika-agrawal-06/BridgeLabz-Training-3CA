@@ -50,3 +50,4 @@ myCart.checkout("HALFOFF50");
 
 // Test valid coupon
 myCart.checkout("SAVE20");
+ 
