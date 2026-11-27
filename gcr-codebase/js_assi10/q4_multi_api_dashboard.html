@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q4 - Multi-API Dashboard</title>
+  <script src="q4_multi_api_dashboard.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 30px auto; }
+    #warning-banner { display: none; background: #fef3c7; color: #92400e; padding: 12px; border-radius: 6px; margin-bottom: 15px; font-weight: bold; }
+    .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .stat-card { border: 1px solid #cbd5e1; border-radius: 8px; padding: 20px; text-align: center; background: #f8fafc; }
+    .stat-value { font-size: 2rem; font-weight: bold; margin-top: 8px; }
+    .skeleton { display: inline-block; width: 60px; height: 32px; background: #cbd5e1; border-radius: 4px; animation: pulse 1.2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Executive Overview Dashboard</h1>
+  </header>
+
+  <main>
+    <div id="warning-banner" role="alert">Some data could not be loaded.</div>
+
+    <section class="metrics">
+      <article class="stat-card">
+        <h2>Total Users</h2>
+        <div class="stat-value" id="users-count"><span class="skeleton"></span></div>
+      </article>
+
+      <article class="stat-card">
+        <h2>Total Orders</h2>
+        <div class="stat-value" id="orders-count"><span class="skeleton"></span></div>
+      </article>
+
+      <article class="stat-card">
+        <h2>Total Products</h2>
+        <div class="stat-value" id="products-count"><span class="skeleton"></span></div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

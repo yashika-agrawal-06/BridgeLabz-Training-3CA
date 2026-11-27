@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q3 - Task Manager With Filters</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q3_task_manager.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 30px auto; }
+    .controls { margin-bottom: 15px; }
+    select { padding: 8px; font-size: 1rem; }
+    ul { list-style: none; padding: 0; }
+    li { display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #ddd; margin-bottom: 8px; border-radius: 6px; }
+    .done { text-decoration: line-through; color: #6b7280; }
+    .tag { font-size: 0.8em; padding: 3px 8px; border-radius: 4px; background: #e2e8f0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Team Task Manager</h1>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label for="filter-select"><strong>Filter / View:</strong></label>
+      <select id="filter-select">
+        <option value="all">All Tasks</option>
+        <option value="Low">Low Priority</option>
+        <option value="Medium">Medium Priority</option>
+        <option value="High">High Priority</option>
+        <option value="completed">Completed</option>
+      </select>
+    </section>
+
+    <ul id="task-list"></ul>
+  </main>
+</body>
+</html>

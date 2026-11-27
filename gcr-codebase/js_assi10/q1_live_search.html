@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q1 - Real-Time Product Search</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q1_live_search.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 750px; margin: 30px auto; }
+    input { width: 100%; padding: 10px; font-size: 1rem; margin-bottom: 12px; box-sizing: border-box; }
+    #loader { display: none; color: #2563eb; font-weight: bold; margin-bottom: 10px; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 15px; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 12px; text-align: center; }
+    .card img { width: 100px; height: 100px; object-fit: cover; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Live Product Catalog Search</h1>
+  </header>
+
+  <main>
+    <section>
+      <input type="text" id="search-box" placeholder="Search products by name...">
+      <div id="loader">Searching products...</div>
+    </section>
+
+    <section id="results-container" class="product-grid"></section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "users": [
+    { "id": 1, "name": "Ananya Roy", "email": "ananya@gmail.com" },
+    { "id": 2, "name": "Karan Malhotra", "email": "karan@gmail.com" },
+    { "id": 3, "name": "Devika Menon", "email": "devika@gmail.com" },
+    { "id": 4, "name": "Siddharth Jain", "email": "sid@gmail.com" },
+    { "id": 5, "name": "Meera Nair", "email": "meera@gmail.com" }
+  ]
+}

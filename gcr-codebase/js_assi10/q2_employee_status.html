@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q2 - Employee Status Dashboard</title>
+  <script src="q2_employee_status.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 30px auto; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+    .badge { padding: 4px 10px; border-radius: 12px; font-size: 0.85em; text-transform: capitalize; }
+    .active { background: #dcfce7; color: #166534; }
+    .inactive { background: #fee2e2; color: #991b1b; }
+    #error-box { color: #dc2626; font-weight: bold; margin: 10px 0; min-height: 20px; }
+    button { padding: 6px 12px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Employee Availability Dashboard</h1>
+  </header>
+
+  <main>
+    <div id="error-box" role="alert"></div>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Employee Name</th>
+          <th>Current Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="employee-tbody"></tbody>
+    </table>
+  </main>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "tasks": [
+    { "id": 1, "title": "Finalize project architecture", "priority": "High", "completed": true },
+    { "id": 2, "title": "Update API documentation", "priority": "Low", "completed": false },
+    { "id": 3, "title": "Fix navbar responsive bug", "priority": "Medium", "completed": false },
+    { "id": 4, "title": "Database backup verification", "priority": "High", "completed": false },
+    { "id": 5, "title": "Clean up unused CSS rules", "priority": "Low", "completed": true }
+  ]
+}
