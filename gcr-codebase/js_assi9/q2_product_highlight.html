@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q2 - Product Highlight</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q2_product_highlight.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 20px auto; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+    .product-card { border: 1px solid #ccc; padding: 15px; border-radius: 8px; transition: 0.2s; cursor: pointer; }
+    .highlighted { background-color: #fffbe6; border-color: #f59e0b; }
+    .extra-details { display: none; font-size: 0.9em; color: #444; margin-top: 8px; }
+    .fav-btn { background: none; border: 1px solid #999; padding: 4px 8px; cursor: pointer; margin-top: 8px; }
+    .fav-btn.selected { background-color: #ef4444; color: white; border-color: #ef4444; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tech Store Showcase</h1>
+  </header>
+
+  <main>
+    <section class="product-grid">
+      <article class="product-card" data-discount="true" data-stock="in-stock">
+        <h3>Wireless Headphones</h3>
+        <p>Price: $99 <small>(20% OFF)</small></p>
+        <button class="fav-btn">&#9829; Favorite</button>
+        <p class="extra-details">30-hour battery life, active noise cancellation, Bluetooth 5.3.</p>
+      </article>
+
+      <article class="product-card" data-discount="false" data-stock="in-stock">
+        <h3>Mechanical Keyboard</h3>
+        <p>Price: $120</p>
+        <button class="fav-btn">&#9829; Favorite</button>
+        <p class="extra-details">Tactile brown switches, aluminum frame, white backlight.</p>
+      </article>
+
+      <article class="product-card" data-discount="true" data-stock="out-of-stock">
+        <h3>4K Webcam</h3>
+        <p>Price: $85 <small>(15% OFF)</small></p>
+        <button class="fav-btn">&#9829; Favorite</button>
+        <p class="extra-details">Auto-focus lens, dual stereo mics, privacy shutter included.</p>
+      </article>
+
+      <article class="product-card" data-discount="false" data-stock="in-stock">
+        <h3>USB-C Hub</h3>
+        <p>Price: $45</p>
+        <button class="fav-btn">&#9829; Favorite</button>
+        <p class="extra-details">7-in-1 adapter with HDMI, SD card reader, and 100W PD.</p>
+      </article>
+
+      <article class="product-card" data-discount="true" data-stock="out-of-stock">
+        <h3>Ergonomic Mouse</h3>
+        <p>Price: $55 <small>(10% OFF)</small></p>
+        <button class="fav-btn">&#9829; Favorite</button>
+        <p class="extra-details">Adjustable DPI up to 4000, silent clicks, rechargeable.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

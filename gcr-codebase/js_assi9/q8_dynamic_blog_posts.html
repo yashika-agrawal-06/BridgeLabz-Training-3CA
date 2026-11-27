@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q8 - Dynamic Blog Posts</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q8_dynamic_blog_posts.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; }
+    .toolbar { margin-bottom: 15px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .blog-post { border: 1px solid #ccc; padding: 14px; margin-bottom: 12px; border-radius: 6px; }
+    .tag-badge { display: inline-block; background: #e0e7ff; color: #3730a3; padding: 2px 8px; border-radius: 12px; font-size: 0.8em; margin-right: 5px; }
+    .keyword-match { background-color: #fef9c3; border-color: #eab308; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Blog Admin Panel</h1>
+  </header>
+
+  <main>
+    <section class="toolbar">
+      <input type="text" id="post-title" placeholder="New post title...">
+      <button id="btn-append">Add New Post</button>
+      <button id="btn-prepend">Prepend Featured Post</button>
+      <button id="btn-remove-last">Remove Last Post</button>
+      <button id="btn-add-tags">Add Tags to Posts</button>
+      <input type="text" id="keyword-input" placeholder="Keyword to highlight (e.g. jQuery)">
+    </section>
+
+    <section id="posts-container">
+      <article class="blog-post">
+        <h3>Getting Started with jQuery DOM Manipulation</h3>
+        <p>Learn how selectors and events make web pages interactive.</p>
+      </article>
+      <article class="blog-post">
+        <h3>Top 10 CSS Grid Tricks for Layouts</h3>
+        <p>Build modern responsive web grids with minimal code.</p>
+      </article>
+      <article class="blog-post">
+        <h3>Understanding Asynchronous JavaScript</h3>
+        <p>Promises, async/await, and event loop explained simply.</p>
+      </article>
+      <article class="blog-post">
+        <h3>Semantic HTML5 Best Practices</h3>
+        <p>Improve accessibility and SEO using proper HTML tags.</p>
+      </article>
+      <article class="blog-post">
+        <h3>Optimizing Frontend Performance</h3>
+        <p>Techniques to reduce load times and improve rendering speed.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

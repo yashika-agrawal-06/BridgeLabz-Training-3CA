@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q6 - Event Subscription Panel</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q6_event_subscription.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 20px auto; }
+    .status-bar { padding: 12px; background: #f1f5f9; border-radius: 6px; margin-bottom: 15px; }
+    .topic-item { display: flex; justify-content: space-between; padding: 8px; border-bottom: 1px solid #ddd; }
+    .feedback { color: #047857; font-weight: bold; margin: 10px 0; min-height: 24px; }
+    .disabled-panel { opacity: 0.5; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Notification &amp; Event Subscriptions</h1>
+  </header>
+
+  <main>
+    <section class="status-bar">
+      <span>Global Notifications: <strong id="notif-status">Enabled</strong></span>
+      <button id="btn-sub">Subscribe</button>
+      <button id="btn-unsub">Unsubscribe</button>
+    </section>
+
+    <div id="feedback-area" class="feedback"></div>
+
+    <section>
+      <input type="text" id="new-topic-input" placeholder="Enter new topic name...">
+      <button id="btn-add-topic">Add Topic</button>
+    </section>
+
+    <section id="topics-container">
+      <h2>Available Topics</h2>
+      <div class="topic-item"><span>Weekly Tech Digest</span> <button class="remove-topic">Remove</button></div>
+      <div class="topic-item"><span>Product Release Notes</span> <button class="remove-topic">Remove</button></div>
+      <div class="topic-item"><span>Security Alerts</span> <button class="remove-topic">Remove</button></div>
+      <div class="topic-item"><span>Community Webinars</span> <button class="remove-topic">Remove</button></div>
+      <div class="topic-item"><span>Developer API Updates</span> <button class="remove-topic">Remove</button></div>
+    </section>
+  </main>
+</body>
+</html>

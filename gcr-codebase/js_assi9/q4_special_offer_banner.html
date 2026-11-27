@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q4 - Special Offer Banner</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q4_special_offer_banner.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; }
+    .controls { margin-bottom: 15px; }
+    button { padding: 7px 12px; margin: 3px; cursor: pointer; }
+    .banner { padding: 20px; color: white; border-radius: 8px; margin-bottom: 10px; font-size: 1.1em; }
+    #b1 { background: #1d4ed8; }
+    #b2 { background: #047857; }
+    #b3 { background: #b45309; }
+    #b4 { background: #6d28d9; }
+    #b5 { background: #be123c; }
+    .rotator-box { margin-top: 25px; border: 2px dashed #ccc; padding: 15px; border-radius: 8px; }
+    .rotate-slide { display: none; padding: 15px; background: #111827; color: #f9fafb; border-radius: 6px; }
+    .rotate-slide.active { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Seasonal Promotions</h1>
+  </header>
+
+  <main>
+    <section class="controls">
+      <button id="btn-hide">Hide Banner 1</button>
+      <button id="btn-show">Show All Banners</button>
+      <button id="btn-slide">Slide Up/Down Banner 2</button>
+      <button id="btn-fade">Fade In/Out Banner 3</button>
+    </section>
+
+    <section id="manual-banners">
+      <article id="b1" class="banner">Banner 1: Flat 30% Off on Electronics!</article>
+      <article id="b2" class="banner">Banner 2: Free Express Shipping on Orders Over $50!</article>
+      <article id="b3" class="banner">Banner 3: Buy 1 Get 1 Free on Accessories!</article>
+      <article id="b4" class="banner">Banner 4: Weekend Flash Sale Starts Friday!</article>
+      <article id="b5" class="banner">Banner 5: Extra 10% Cashback with Partner Cards!</article>
+    </section>
+
+    <section class="rotator-box">
+      <h2>Auto-Rotating Spotlight (Every 5 Seconds)</h2>
+      <div class="rotate-slide active">Spotlight 1: Summer Clearance Up to 60% Off</div>
+      <div class="rotate-slide">Spotlight 2: New Arrivals in Smart Home Devices</div>
+      <div class="rotate-slide">Spotlight 3: Refer a Friend and Earn $20 Credit</div>
+    </section>
+  </main>
+</body>
+</html>

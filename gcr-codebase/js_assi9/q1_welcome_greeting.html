@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q1 - Welcome Page Greeting</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q1_welcome_greeting.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 30px auto; line-height: 1.6; }
+    header { background: #f0f4f8; padding: 20px; border-radius: 8px; }
+    #greeting-text { cursor: pointer; color: #1a365d; }
+    .controls { margin: 15px 0; }
+    button { padding: 8px 14px; margin-right: 8px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="greeting-text" title="Click me!">Hello Visitor!</h1>
+    <p id="welcome-msg">Welcome to our digital workspace. Explore our latest tools, guides, and updates below.</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <button id="btn-quote">Change Greeting</button>
+      <button id="btn-toggle-msg">Toggle Welcome Message</button>
+    </section>
+
+    <section>
+      <h2>Quick Highlights</h2>
+      <ul>
+        <li>Fast and responsive interface</li>
+        <li>Daily productivity insights</li>
+        <li>24/7 community support</li>
+        <li>Customizable dashboard tools</li>
+        <li>Regular feature updates</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Web Portal</p>
+  </footer>
+</body>
+</html>

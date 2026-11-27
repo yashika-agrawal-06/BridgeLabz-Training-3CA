@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q7 - Search Courses</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q7_search_courses.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 750px; margin: 20px auto; }
+    .search-bar { display: flex; gap: 10px; margin-bottom: 12px; }
+    input { flex: 1; padding: 8px; }
+    .course-card { border: 1px solid #ddd; padding: 12px; margin-bottom: 8px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Online Course Catalog</h1>
+  </header>
+
+  <main>
+    <section class="search-bar">
+      <input type="text" id="course-search" placeholder="Search courses (e.g., Python, Web, Data)...">
+      <button id="btn-clear">Clear Search</button>
+    </section>
+
+    <p>Showing <strong id="match-count">6</strong> courses</p>
+
+    <section id="course-list">
+      <article class="course-card" data-title="Modern JavaScript & jQuery Essentials">Modern JavaScript &amp; jQuery Essentials</article>
+      <article class="course-card" data-title="Python for Data Science and AI">Python for Data Science and AI</article>
+      <article class="course-card" data-title="Full-Stack Web Development Bootcamp">Full-Stack Web Development Bootcamp</article>
+      <article class="course-card" data-title="UI/UX Design Principles with Figma">UI/UX Design Principles with Figma</article>
+      <article class="course-card" data-title="Database Management & SQL Fundamentals">Database Management &amp; SQL Fundamentals</article>
+      <article class="course-card" data-title="Cloud Computing & DevOps Basics">Cloud Computing &amp; DevOps Basics</article>
+    </section>
+  </main>
+</body>
+</html>

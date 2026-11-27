@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q9 - Multi-jQuery Widgets</title>
+  <!-- Load jQuery Version 1 (1.12.4) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- Load jQuery Version 2 (3.7.1) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q9_multi_jquery_widgets.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; }
+    .widget { border: 2px solid #cbd5e1; padding: 15px; margin-bottom: 15px; border-radius: 8px; }
+    .active-widget { border-color: #2563eb; background-color: #eff6ff; }
+    .slide { display: none; font-weight: bold; padding: 10px; background: #1e293b; color: white; border-radius: 4px; }
+    .slide.current { display: block; }
+    #custom-modal { display: none; position: fixed; top: 25%; left: 35%; width: 30%; background: white; border: 2px solid #111; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 100; }
+    #tooltip-box { display: none; position: absolute; background: #111; color: #fff; padding: 5px 10px; border-radius: 4px; font-size: 0.85em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Multi-Version jQuery Dashboard</h1>
+    <p id="version-info"></p>
+  </header>
+
+  <main>
+    <!-- Widget 1: Carousel (Handled by jQuery v1) -->
+    <section class="widget" id="widget-carousel">
+      <h2>Widget 1: News Carousel (jQuery 1.x)</h2>
+      <div class="slide current">Slide 1: System Maintenance Scheduled for Sunday</div>
+      <div class="slide">Slide 2: Q4 Analytics Report Now Available</div>
+      <div class="slide">Slide 3: New Security Patch Deployed</div>
+      <button id="next-slide">Next Slide</button>
+    </section>
+
+    <!-- Widget 2: Modal Notification (Handled by jQuery v2) -->
+    <section class="widget" id="widget-modal">
+      <h2>Widget 2: Notification Center (jQuery 3.x)</h2>
+      <button id="open-modal">Open Notification Modal</button>
+    </section>
+
+    <!-- Widgets 3, 4, 5: Tooltip enabled items (Handled by jQuery v2) -->
+    <section class="widget" id="widget-metrics">
+      <h2>Widget 3: Server Metrics (Hover for Tooltips)</h2>
+      <p class="has-tooltip" data-tip="CPU load is normal at 32%">CPU Usage: 32%</p>
+      <p class="has-tooltip" data-tip="12GB of 16GB RAM currently utilized">Memory Usage: 75%</p>
+      <p class="has-tooltip" data-tip="All database clusters are online">DB Status: Healthy</p>
+    </section>
+  </main>
+
+  <div id="custom-modal">
+    <h3>System Alert</h3>
+    <p>This modal is powered by jQuery Version 3.7.1 without conflicting with jQuery 1.12.4!</p>
+    <button id="close-modal">Close</button>
+  </div>
+
+  <div id="tooltip-box"></div>
+</body>
+</html>

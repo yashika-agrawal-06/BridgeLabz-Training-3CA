@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q5 - Team Members Directory</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q5_team_directory.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; }
+    .department { border: 1px solid #cbd5e1; padding: 15px; margin-bottom: 16px; border-radius: 8px; }
+    .dept-header { cursor: pointer; background: #e2e8f0; padding: 8px; border-radius: 4px; }
+    .manager { font-weight: bold; cursor: pointer; color: #1e40af; margin-top: 10px; }
+    .member { padding: 6px 10px; margin: 4px 0; border-radius: 4px; background: #f8fafc; cursor: pointer; }
+    .contact-info { display: none; font-size: 0.85em; color: #475569; margin-left: 12px; }
+    .highlight-report { background-color: #dbeafe !important; }
+    .highlight-sibling { border: 2px solid #f59e0b; }
+    .dept-active { background-color: #ecfdf5 !important; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Company Directory</h1>
+    <button id="btn-random-emp">Highlight Random Employee's Siblings</button>
+  </header>
+
+  <main>
+    <section class="department">
+      <h2 class="dept-header">Engineering Department <button class="toggle-team">Collapse/Expand</button></h2>
+      <div class="team-body">
+        <p class="manager">Manager: Sarah Connor (Click to highlight reports)</p>
+        <div class="member-list">
+          <div class="member">Alice Johnson (Frontend Dev)</div>
+          <span class="contact-info">alice@company.com | Ext: 101</span>
+
+          <div class="member">Bob Smith (Backend Dev)</div>
+          <span class="contact-info">bob@company.com | Ext: 102</span>
+
+          <div class="member">Charlie Davis (DevOps)</div>
+          <span class="contact-info">charlie@company.com | Ext: 103</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="department">
+      <h2 class="dept-header">Design &amp; Product <button class="toggle-team">Collapse/Expand</button></h2>
+      <div class="team-body">
+        <p class="manager">Manager: David Lee (Click to highlight reports)</p>
+        <div class="member-list">
+          <div class="member">Eva Green (UI Designer)</div>
+          <span class="contact-info">eva@company.com | Ext: 201</span>
+
+          <div class="member">Frank Wright (UX Researcher)</div>
+          <span class="contact-info">frank@company.com | Ext: 202</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

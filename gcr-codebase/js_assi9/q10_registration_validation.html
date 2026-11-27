@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q10 - Registration Form Validation</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q10_registration_validation.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 500px; margin: 30px auto; }
+    .form-group { margin-bottom: 14px; }
+    label { display: block; margin-bottom: 4px; font-weight: bold; }
+    input { width: 100%; padding: 8px; border: 2px solid #cbd5e1; border-radius: 4px; box-sizing: border-box; }
+    .error-msg { color: #dc2626; font-size: 0.85em; margin-top: 4px; display: block; }
+    #success-banner { display: none; background: #dcfce7; color: #166534; padding: 12px; border-radius: 6px; margin-top: 15px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Create an Account</h1>
+  </header>
+
+  <main>
+    <form id="reg-form" novalidate>
+      <div class="form-group">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" placeholder="Enter your name">
+        <span class="error-msg" id="err-name"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Try admin@example.com to test uniqueness">
+        <span class="error-msg" id="err-email"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password (Min 8 characters)</label>
+        <input type="password" id="password" placeholder="Enter password">
+        <span class="error-msg" id="err-pass"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="Re-enter password">
+        <span class="error-msg" id="err-confirm"></span>
+      </div>
+
+      <button type="submit">Register Account</button>
+    </form>
+
+    <div id="success-banner">Registration successful! Welcome aboard.</div>
+  </main>
+</body>
+</html>

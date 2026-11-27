@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q3 - Interactive FAQ</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="q3_interactive_faq.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 750px; margin: 20px auto; }
+    .faq-item { border: 1px solid #ddd; border-radius: 6px; margin-bottom: 12px; padding: 12px; }
+    .faq-question { margin: 0; cursor: pointer; transition: background-color 0.2s; padding: 6px; border-radius: 4px; }
+    .faq-answer { display: none; margin-top: 10px; padding-left: 6px; color: #333; }
+    .faq-answer input { margin-top: 8px; padding: 6px; width: 80%; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Frequently Asked Questions</h1>
+    <p><small>Click a question to view the answer. Double-click any question to collapse all.</small></p>
+  </header>
+
+  <main>
+    <section id="faq-list">
+      <article class="faq-item">
+        <h3 class="faq-question">1. How do I reset my account password?</h3>
+        <div class="faq-answer">
+          <p>Go to Settings &gt; Security and click "Reset Password".</p>
+          <input type="text" placeholder="Add a follow-up question or note...">
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <h3 class="faq-question">2. What payment methods are accepted?</h3>
+        <div class="faq-answer">
+          <p>We accept Visa, MasterCard, UPI, PayPal, and Net Banking.</p>
+          <input type="text" placeholder="Ask about a specific payment method...">
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <h3 class="faq-question">3. Can I cancel my subscription anytime?</h3>
+        <div class="faq-answer">
+          <p>Yes, you can cancel with one click from your billing dashboard.</p>
+          <input type="text" placeholder="Need help with billing? Type here...">
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <h3 class="faq-question">4. Do you offer student discounts?</h3>
+        <div class="faq-answer">
+          <p>Students with a valid .edu email receive 50% off all annual plans.</p>
+          <input type="text" placeholder="Enter your institution query...">
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <h3 class="faq-question">5. How fast does customer support respond?</h3>
+        <div class="faq-answer">
+          <p>Our average response time is under 2 hours during business days.</p>
+          <input type="text" placeholder="Leave feedback on support...">
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
